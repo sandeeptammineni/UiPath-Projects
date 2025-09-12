@@ -1,0 +1,176 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="668.6666666666666,1346" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="CoinMarketCap" sap:VirtualizedContainerService.HintSize="518,526.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome New Tab" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,434.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d8908fef-d9f8-49ca-98e8-3223e964be7b" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,192.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'DIV'" sap:VirtualizedContainerService.HintSize="416,132.66666666666666" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bb21c0ec-dc07-42fc-9676-278754c424a2" InformativeScreenshot="0b3623c9e597d04e3fde1058f82de9e2" Selector="&lt;webctrl class='NetworksTabs_network-item__SBLIC' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="DlrRX7nPXUmDnmB2RPbp7w" IconBase64="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" InformativeScreenshot="42eafb0757b736225ffe8160d1f770ac.png" Reference="SaqMphSSlUazPeTczmsFLg/lz84yvDT_E2KPXydfQ4Yxg" Selector="&lt;html app='chrome.exe' url='https://coinmarketcap.com/' /&gt;" Url="https://coinmarketcap.com/" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Cryptocurrency Prices, Charts And Market Capitalizations | CoinMarketCap" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,796.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="5f395112-f394-4f9b-9a1d-46f4edb55495" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450.6666666666667,514.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='#' ReferenceIdx='1' Name='#'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Name' ReferenceIdx='2' Name='Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Name Src' ReferenceIdx='3' Name='Name Src'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Name Alt Text' ReferenceIdx='4' Name='Name Alt Text'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Name Url' ReferenceIdx='5' Name='Name Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Price' ReferenceIdx='6' Name='Price'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='1h %' ReferenceIdx='7' Name='1h %'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='24h %' ReferenceIdx='8' Name='24h %'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='7d %' ReferenceIdx='9' Name='7d %'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Market Cap' ReferenceIdx='10' Name='Market Cap'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Volume(24h)' ReferenceIdx='11' Name='Volume(24h)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Volume(24h) Url' ReferenceIdx='12' Name='Volume(24h) Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Circulating Supply' ReferenceIdx='13' Name='Circulating Supply'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Last 7 Days' ReferenceIdx='14' Name='Last 7 Days'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Last 7 Days Src' ReferenceIdx='15' Name='Last 7 Days Src'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Last 7 Days Alt Text' ReferenceIdx='16' Name='Last 7 Days Alt Text'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='#' attr='fulltext' /&gt;&lt;column name='Name' attr='fulltext' name2='Name Src' attr2='src' name3='Name Alt Text' attr3='alt' name4='Name Url' attr4='href' /&gt;&lt;column name='Price' attr='fulltext' /&gt;&lt;column name='1h %' attr='fulltext' /&gt;&lt;column name='24h %' attr='fulltext' /&gt;&lt;column name='7d %' attr='fulltext' /&gt;&lt;column name='Market Cap' attr='fulltext' /&gt;&lt;column name='Volume(24h)' attr='fulltext' name2='Volume(24h) Url' attr2='href' /&gt;&lt;column name='Circulating Supply' attr='fulltext' /&gt;&lt;column name='Last 7 Days' attr='fulltext' name2='Last 7 Days Src' attr2='src' name3='Last 7 Days Alt Text' attr3='alt' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,192" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="10" ScopeIdentifier="5f395112-f394-4f9b-9a1d-46f4edb55495" Version="V5">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://coinmarketcap.com/" DesignTimeRectangle="35, 723, 1892, 10434" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="919ab630-4465-4cb9-a257-76e73f5afa29" InformativeScreenshot="5a182cadf265b322d5fe5a36c2beaa14.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cryptocurrency Prices, Charts And Market Capitalizations | CoinMarketCap' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\harip\Desktop\My Personal Projects\UiPath\WebScrapingProject\CoinMarketCapData.xlsx" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,112" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Task Done !&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="31c1c7677c760719d68dbc102b025dde.jpg" Selector="&lt;html app='chrome.exe' title='Cryptocurrency Prices, Charts And Market Capitalizations | CoinMarketCap' /&gt;" Url="https://coinmarketcap.com/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
